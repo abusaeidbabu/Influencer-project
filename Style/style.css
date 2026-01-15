@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+header nav{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 87PX;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    margin-bottom: 41px;
+}
+.nav-logo{
+    font-size: 1.5rem;
+    color: #3A3A3A;
+    font-weight:bold;
+}
+.nav-menu ul{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+.nav-menu ul li{
+    list-style: none;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+     font-size: 1rem;
+    font-weight: 500;
+    color: #3A3A3A;
+}
+.header-container{
+    max-width: 1188px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 131px;
+}
+.header-info{
+    max-width: 582px;
+    padding: 101px 0px 104px 0px;
+}
+.header-info h2{
+    font-size: 3.35rem;
+    line-height: 70px;
+    font-weight: bold;
+    color: #3A3A3A;
+}
+.header-info p{
+    font-size: 1rem;
+    font-weight: 600px;
+    color: #3A3A3A;
+    margin-bottom: 16px;
+}
+.btn{
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 41px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(219, 213, 25);
+    color: black;
+}
+.img{
+    background-image:url(/images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 475px;
+    width: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (width<576px) {
+    .nav{
+        display:grid;
+        grid-template-columns:1fr;
+        /* grid-column: auto; */
+        margin-top: 20px;
+        width: 100%;
+    }
+    .nav-logo{
+        margin-left: 20px;
+    }
+    .nav-menu ul{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .header-container{
+        grid-template-columns: 1fr;
+        gap: 0;
+        width: 100%;
+    }
+    .img{
+        order: -1;
+        width: 100%;
+    }
+    .header-info{
+        text-align: center;
+        width: 100%;
+        padding-top: 0;
+        margin: 0 10px;
+    }
+    .header-info h2{
+        font-size: 1.75rem;
+        width: 100%;
+    }
+}
