@@ -93,9 +93,60 @@ header nav{
     margin: 0 auto;
     padding: 35px 62px;
 }
+.card-container{
+    max-width: 1047px;
+    margin: 0 auto;
+}
+.card-container #hh4{
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 70px;
+    color: #3A3A3A;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.card-info{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 30px;
+}
+.card{
+    max-width: 329px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 40px 0 #00000024;
+    padding: 17px 15px;
+    border-radius: 5px;
+}
+.card h4{
+    font-size: 1.75rem;
+    line-height: 40px;
+    color: #18191F;
+    font-weight: 600;
+    padding: 6px;
+    padding-left: 0;
+}
+.card h5{
+    font-size: 1.5rem;
+    color: #000000ab;
+    font-weight: 400;
+    line-height: 150%;
+}
+.card p{
+    font-size: 14px;
+    color: #787885;
+    line-height: 143%;
+    font-weight: bold;
+}
 
+.see-more{
+    /* margin-top: 50x; */
+    padding-top: 50px;
+    text-align: end;
+    font-size: 1rem;
+    color: #e02c6ebe;
+    font-weight: bold;
 
-
+}
 
 
 
@@ -146,5 +197,10 @@ header nav{
         margin-top: 0;
         width: 100%;
         padding: 0;
+    }
+    .card-info{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    
     }
 }
