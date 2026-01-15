@@ -147,7 +147,34 @@ header nav{
     font-weight: bold;
 
 }
+.feature{
+    max-width: 1110px;
+    margin: 100px auto;
+    display: flex;
+    gap: 96px;
+}
+.feature-info{
+    padding: 23px 0;
+}
+.feature-info h2{
+    font-size: 2.375rem;
+    font-weight: bold;
+    line-height: 60px;
+    margin-bottom: 16px;
+    color: #0A0826;
+}
+.feature-info p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #6C6C6C;
+    margin-bottom: 16px;
 
+}
+.btn{
+    padding: 10px 24px;
+    line-height: 24px;
+    border-radius: 0px;
+}
 
 
 /* ************************************************************************************************************************************************************** */
@@ -202,5 +229,11 @@ header nav{
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
     
+    }
+    .feature{
+        width: 100%;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 10px;
     }
 }
